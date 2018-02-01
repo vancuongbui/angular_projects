@@ -1,0 +1,43 @@
+1. Install NPM:
+    npm install [-g] npm
+
+2. Install @angular/cli
+    npm install [-g] @angular/cli
+    Note: uninstall: 
+        npm uninstall [-g] angular-cli @angular/cli
+
+3. Initiate project:
+    npm init
+
+4. Install bootstrap@3:
+    npm install --save-dev bootstrap@3
+
+5. install Nodejs
+    first step: curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+    second step: sudo yum -y install nodejs
+
+6. create new App
+    ng new my-app-name      //alphabets and hyphens only    
+
+7. building and run:
+    ng server
+    then, http://localhost:4200
+
+8. Edite App: 
+    edit the app only with "app"
+
+9. Forms:
+    import {FormsModule} from '@angular/forms
+
+    @NgModule({
+        declarations: [
+            AppComponent    
+        ],
+        imports: [
+            BrowserModule,
+            FormsModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+    })
+    export class AppModule { }
